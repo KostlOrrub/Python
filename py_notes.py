@@ -94,6 +94,8 @@ STRING METHODS
 #This will make string all uppercase.
     string.strip()
 #This will delete any extra spaces.
+	string.insert(num,value)
+#This inserts the new value at the beginning of the list. 
     type()
 #This will output what type of data your variable is.
     string.replace(“value”,”replacement”)
@@ -408,4 +410,5 @@ RECURSION
 
 
     
+
 
