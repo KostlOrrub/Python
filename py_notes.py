@@ -145,6 +145,8 @@ LISTS/DICTIONARIES/TUPLES/STACKS
 #You can insert an item into an index part of a list.
     list.remove(“string”)
 #List can be used to remove the first instance of a string in a list.
+	list.reverse()
+#this will reverse the list.
     variable=list.pop(0)
 #This is used to pull and item but still have assigned to a value.
     len(list)
@@ -410,5 +412,6 @@ RECURSION
 
 
     
+
 
 
