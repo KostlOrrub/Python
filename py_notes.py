@@ -137,6 +137,8 @@ LISTS/DICTIONARIES/TUPLES/STACKS
 #This can be used to access an item in a list.(indexed starting at 0)
     listname[0]+0
 #Use This to do any type of math with integers in a list.
+	del list[index]
+#use this to delete an item in a list by index
     list.append(“item”)
 #This adds an item to the end of the list.
     list.extend([2,3,4,5,6])
@@ -412,6 +414,7 @@ RECURSION
 
 
     
+
 
 
 
