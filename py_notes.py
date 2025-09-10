@@ -172,7 +172,7 @@ LISTS/DICTIONARIES/TUPLES/STACKS
     Dictionary={key:value,}
 #This is how a dictionary is set up, a list structure with curly braces. Each item is a pair with a Key and a Value. 
     print(Dictionary[key])
-#This will print out a specific key in a dictionary.
+#This will print out a specific value in a dictionary.
     dictionary[key]=newvalue
 #This will change a key and value in a dictionary, if there is no key with #This name it will add #This item to the dictionary. 
     Dictionary.pop(key)
@@ -414,6 +414,7 @@ RECURSION
 
 
     
+
 
 
 
