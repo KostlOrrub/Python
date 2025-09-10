@@ -120,8 +120,8 @@ STRING METHODS
 #this will check to see if a string/charcter is uppercase
     char.isalnum()
 #this will check to see if a charcter is a number.
-CONCATENATION
-         
+	isinstance(varible, type)
+#this will return a true or false depending on the data type. Checking to see if a value is a certian data type.
     string.format()
 #This will allow any data type to be inputted into a string. The string must have { }. You can add more than one by using commas inside of the parentheses. The words will be replaced in order of the brackets. (first word will go into the first pair of brackets)
 
@@ -414,6 +414,7 @@ RECURSION
 
 
     
+
 
 
 
