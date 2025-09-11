@@ -282,6 +282,8 @@ FUNCTIONS
 #This is a local variable that can only be used in a function
     global
 #This is a keyword that can be placed before a variable name to make a local variable global.
+	.min()
+#tells you the smallest value in a list.
 
 GIT REFERENCES
 
@@ -414,6 +416,7 @@ RECURSION
 
 
     
+
 
 
 
