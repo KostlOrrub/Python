@@ -51,38 +51,12 @@ elif Choice in Food:
 else:
      print("Thats not a Choice sorry!")
 
-# if they have a second Choice
 
-
-Choice2=int(input("would you like anything else?"))
-
-
-if Choice2==False:
-    Cust_Payment=input(f"Your total will be {Total}. Will that be cash or card?")
-else:
-    Choice3=input("What else could I get you?")
-    if Choice3 in Drinks.keys():
-            cost2=(Drinks[Choice3])
-            Total+=cost2
-            Milk_opt2= int(input('''Would you like another type of milk?
-We have Oat, Soy, Whole or Almond? They are .50 extra.'''))
-            if Milk_opt2==True:
-                Total+=0.50
-                print(f"{Choice3}, Sure! That will be {Total} dollars")
-            elif Milk_opt2== False:
-                Total+=0
-    elif Choice3 in Food:
-        cost=(Food[Choice3])
-        Total+=cost
-        print(f"{Choice3}, Sure! That will be {cost}.")
-    else:
-         print("Thats not a Choice sorry!")
+Cust_Payment=input(f"Your total will be {Total}. Will that be cash or card? (1 for cash, 2 for card")
                   
-if Cust_Payment=="cash" or "Cash":
+if Cust_Payment== "cash" or "Cash":
     print("Cash? Sure thing, how much of each of these will you give me?")
-    Cash_List=[int(n) for n in input("Dollars:____ \nQuarters:____\nDimes:____\nNickels:____\nPenny:____").split()]
-    print(Cash_List)
-    
+    Cash_List=[int(n) for n in input("Dollars:____ \nQuarters:____\nDimes:____\nNickels:____\nPenny:____ (Input each number seperated by spaces)").split()]
     Total-= Cash_List[0]*(Payment["Dollar"])
     Total-= Cash_List[1]*(Payment["Quarter"])
     Total-= Cash_List[2]*(Payment["Dime"])
@@ -100,22 +74,23 @@ elif Cust_Payment=="Card" or "card":
     Pin=input("Please insert your card pin:____\n(four digets)\n")
     while Pin != "1234":
         Pin=input("Try again! \n(four digets)\n")
-    if Pin == "1234:
-        print("Card Processing"
+    if Pin == "1234":
+        print("Card Processing")
         time.sleep(1)
-        print("Processing..."
+        print("Processing...")
         time.sleep(3)
         print("Payment Accepted!")
         Total-=Total
               
 if Total>0.00:
     New_Payment=int("That wasnt enough, Will you give me the rest of the payment?\n (0 for no 1 for yes)")
-    if New_Payment== Tr
-elif Total >0.00:
-    Total*= -1
-    print("Perfect! heres your items and Heres your change: {Total}")
+    if New_Payment== True:
+        Total*= -1
+        print("Perfect! heres your items and Heres your change: {Total}")
+    else:
+        print("fine, nothing for you then >:(")
     if Choice in Drinks:
-        print('''   ( ) (
+        print('''       ( ) (
                        ________
                        \ ~~~~ /_
                         \    / _)
@@ -131,7 +106,7 @@ elif Total >0.00:
 elif Total==0.00:
     print("Perfect! heres your items:")
     if Choice in Drinks:
-        print('''   ( ) (
+        print('''       ( ) (
                        ________
                        \ ~~~~ /_
                         \    / _)
