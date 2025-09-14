@@ -269,6 +269,10 @@ For x in variable:
             For x in dictionary:
                     Running code
 #These for loops run through every value in a list, then line 2 checks if it's in the dictionary, then runs the bottom code.
+	for i in range(1, len(my_list)):
+    	current_item = my_list[i]
+    	previous_item = my_list[i-1]
+#lets you compare an item in a list to the last one
 
 FUNCTIONS
 
@@ -416,6 +420,7 @@ RECURSION
 
 
     
+
 
 
 
