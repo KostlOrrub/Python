@@ -44,6 +44,12 @@ MATH
 #This returns the remainder.(Modulus)
     +=, *=, -=, /=,
 #You can use This to use an operation on a value quicker.EX. Total += 10(#This adds 10 to the varible Total.)
+	a**b,
+#makes the first number the base and the second the exponent. 
+	Unary +
+#makes reading easier in operators, it means keep sign same.
+	Unary -
+#makes reading easier in operators, it means reverse sign.
     x=math.ceil()
 #This Rounds up to The next whole value
     x=math.floor()
@@ -54,6 +60,7 @@ MATH
 #This lets you find the Square root
     pow(value, value)
 #Muiply a number by a power, first num is base, second is power.
+	
     
 FORMATTING
 
@@ -125,6 +132,7 @@ STRING METHODS
     string.format()
 #This will allow any data type to be inputted into a string. The string must have { }. You can add more than one by using commas inside of the parentheses. The words will be replaced in order of the brackets. (first word will go into the first pair of brackets)
 
+
 LISTS/DICTIONARIES/TUPLES/STACKS
          
     string.split()
@@ -187,6 +195,10 @@ A tuple is an unchangeable list, they cannot be added to or subtracted from.
 #this takes a list and makes it into one line of string
     list=list(varible1)
 #this takes a varible and makes it into a list split up by character
+	print(min(list))
+#prints the minimum value in a list
+	print(max(list))
+#prints the max value in a list
 
 IF STATEMENTS
          
@@ -273,6 +285,13 @@ For x in variable:
     	current_item = my_list[i]
     	previous_item = my_list[i-1]
 #lets you compare an item in a list to the last one
+	break
+#used in a for loop to immdatly exit the loop. 
+	continue
+#used in a for loop to skip the current loop and move onto the next iteration. 
+	pass
+#place holder for futrue code, will read as empty code.
+
 
 FUNCTIONS
 
@@ -358,6 +377,7 @@ DATE TIME LIBRARY
 #Prints the current two digit day
     print(x.strftime("%Y"))
 #Prints the current Four digit Year.
+#this for rest of strftime % https://www.w3schools.com/python/python_datetime.asp
 
 TRY BLOCKS
 #these are formatted like a loop.
@@ -405,6 +425,21 @@ RECURSION
 #Base Case: The stoppung condition that prevents infinite looping:
 #Recursive Case: The part of the function tha calls itself with modified parameters.
 
+UNIT TESTING
+	self.assertEqual(a,b)
+#this testing method checks to see if a==b
+	self.assertTrue(x)
+#tests to see if x is true
+	assertIs(a,b)
+#testing method that checks if a and b ar eths ame object(not just equal)
+	assertIsInstance(obj,cls)
+#checks to see if object is a class.
+	assertIn(a,b)
+#checks if a is in b.
+
+
+
+
 
         
         
@@ -420,6 +455,7 @@ RECURSION
 
 
     
+
 
 
 
